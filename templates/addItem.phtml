@@ -1,0 +1,25 @@
+{% extends 'base.phtml' %}
+{% block content %}
+{% block info %}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <h1>Add Item</h1>
+  </div>
+</div>
+{% endblock %}
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <div class="btn-group btn-group-justified" role="group">
+      <a class="btn btn-default" href="#/addg">Games</a>
+      <a class="btn btn-default" href="#/addc">Consoles</a>
+      <a class="btn btn-default" href="#/adda">Accessories</a>
+    </div>
+  </div>
+</div>
+<div class="row" ng-app="project">
+  <div class="col-md-10 col-md-offset-1">
+    <div ng-view>
+    </div>
+  </div>
+</div>
+{% endblock %}

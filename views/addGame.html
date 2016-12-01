@@ -1,0 +1,48 @@
+<h2>Add a Game</h2>
+<div class="col-md-4">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <form id="addGame"  action="/test/addGame" method="post" onsubmit="return valAddGame();">
+        <div class="form-group">
+          <label for="gname">Name</label>
+          <input type="text" class="form-control" id="gname" name="gname"placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="genre">Genre</label>
+          <select id="genre" class="form-control" name="genre">
+            <option value="">Select Genre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="gprice">Price</label>
+          <input type="text" class="form-control" id="gprice" name="gprice" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="gquantity">Quantity</label>
+          <input type="text" class="form-control" id="gquantity" name="gquantity" placeholder="">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit" name="submit">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <div id="table_sec">
+
+      </div>
+      <table id="gamesTable" class="table table-bordered table-striped table-condensed">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Genre</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<h2>Add an Accessory</h2>
+<div class="col-md-4">
+  <div class="panel panel-primary">
+    <div class="panel-body">
+      <form id="addAcc" class="" action="/test/addItem" method="post">
+        <div id="game" class="form-group">
+          <label for="aname">Name</label>
+          <input type="text" class="form-control" id="aname" placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="aprice">Price</label>
+          <input type="text" class="form-control" id="aprice" name="aprice"placeholder="">
+        </div>
+        <div class="form-group">
+          <label for="aquantity">Quantity</label>
+          <input type="text" class="form-control" id="aquantity" name="aquantity" placeholder="">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-primary" type="submit" name="submit">Add Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="col-md-8">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <table id="accsTable" class="table table-bordered table-striped table-condensed">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>

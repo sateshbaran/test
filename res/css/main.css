@@ -1,0 +1,14 @@
+body{
+  padding-top: 70px;
+  padding-bottom:  70px;
+  background-color: #4F5D73;
+  color: #ededef;
+}
+.panel{
+  color: #4F5D73;
+}
+.navbar-brand
+{
+  padding-top: 0;
+  color: #76C2AF;
+}
