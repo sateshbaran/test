@@ -50,7 +50,7 @@ $app->post('/addUser', function (Request $request, Response $response) {
 	return $response;
 });
 
-$app->post('/login', function (Request $request, Response $response) {
+$app->post(‘/test/login', function (Request $request, Response $response) {
 	$post = $request->getParsedBody();
 	$u = $post['username'];
 	$p = $post['password'];
