@@ -2,7 +2,7 @@
 
 function connectDB(){
   try{
-    $db = new mysqli("localhost","root","","gameDB");//Change later
+    $db = new mysqli("us-cdbr-iron-east-04.cleardb.net","bee11f4e479155","07064880","heroku_f154ae20fe9c574");//Change later
     if($db == NULL && $db->connect_errno > 0)return NULL;
     return $db;
   }catch(Exception $e){}
