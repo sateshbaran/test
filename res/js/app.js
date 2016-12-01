@@ -4,7 +4,6 @@ app.config(["$routeProvider",function($routeProvider){
   $routeProvider
   .when("/games",{
     templateUrl : "views/videogames.html",
-    controller : "games"
   })
   .when("/consoles",{
     templateUrl : "views/consoles.html"
@@ -34,6 +33,7 @@ app.config(["$routeProvider",function($routeProvider){
 app.controller('games',['$scope',function($scope){
   console.log('games controller executed');
   retrieveGames();
+  retrieveGenres();
 }]);
 app.controller('consoles',['$scope',function($scope){
   console.log('consoles controller executed');

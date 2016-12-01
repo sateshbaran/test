@@ -2,7 +2,7 @@
 <div class="col-md-4">
   <div class="panel panel-default">
     <div class="panel-body">
-      <form id="addConsole" class="" action="/test/addItem" method="post">
+      <form id="addConsole" class="" action="/test/addConsole" method="post" onsubmit="return valAddConsole();">
         <div id="game" class="form-group">
           <label for="cname">Name</label>
           <input type="text" class="form-control" id="cname" placeholder="">
@@ -26,12 +26,6 @@
   <div class="panel panel-primary">
     <div class="panel-body">
       <table id="consTable"  class="table table-bordered table-striped table-condensed">
-        <tr>
-          <th>ID</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-        </tr>
       </table>
     </div>
   </div>

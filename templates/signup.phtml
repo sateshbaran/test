@@ -10,14 +10,11 @@
 {% endblock %}
 <div class="row">
   <div class="col-md-10 col-md-offset-1">
-    <div class="col-md-8">
-      <h2>Just some info needed</h2>
-    </div>
-    <div class="col-md-4">
+    <div class="col-md-5">
       <div class="panel panel-default">
         <div class="panel-body">
           <h2>Sign Up</h2>
-          <form action="users.php" method="post">
+          <form id="signup" action="/test/addUser" method="post" onsubmit="return valSignUp();">
             <div class="form-group">
               <label for="firstname">Firstname</label>
               <input type="text" class="form-control" id="firstname" name="firstname">
@@ -39,11 +36,22 @@
               <input type="password" class="form-control" id="password" name="password">
             </div>
             <div class="form-group">
+              <label for="usertype">Usertype</label>
+              <select id="usertype" class="form-control" name="">
+                <option value="9">Select Usertype</option>
+                <option value="0">General</option>
+                <option value="1">Administrator</option>
+              </select>
+            </div>
+            <div class="form-group">
               <button class="btn btn-primary" type="submit" name="submit">Sign Up!</button>
             </div>
           </form>
         </div>
-
+      </div>
+    </div>
+    <div class="col-md-7">
+      <h2>Just some info needed</h2>
+    </div>
   </div>
-</div>
 {% endblock %}
